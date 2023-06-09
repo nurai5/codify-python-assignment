@@ -4,7 +4,6 @@ import openai
 
 def complete_prompt(prompt):
     openai.api_key = config('OPENAI_API_KEY')
-    openai.organization = 'PersonalUsage'
 
     response = openai.Completion.create(
         model='gpt-3.5-turbo',
